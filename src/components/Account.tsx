@@ -6,8 +6,7 @@ interface HeroModalProps {
   isOpen: any;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const AccountDropdown: React.FC<HeroModalProps> = ({ isOpen, setIsOpen }) => {
-  // console.log(isOpen);
+const AccountDropdown: React.FC<HeroModalProps> = ({ isOpen }) => {
   return (
     isOpen && (
       <div

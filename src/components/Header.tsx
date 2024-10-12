@@ -22,7 +22,7 @@ const Header = () => {
     setIsOpennot(!isOpennot);
   };
   const handleOpenNotc = () => {
-    setIsOpenaccount(!isOpennot);
+    setIsOpenaccount(!isOpenaccount);
   };
 
   return (
