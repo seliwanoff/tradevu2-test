@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+* {
+  padding: 0px;
+  margin: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Rubik";
+  src: url("./assets/fonts/Rubik-Regular.ttf") format("truetype");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --primary_background: #f9fafb;
+  --primary_button_color: #5e01d6;
+  --secondary_button_color: #ebe4ff;
+  --header_border: #eaecf0;
+  --primary_text_color: #344054;
+  --active_text_color: #6f00ff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: var(--primary_background);
+  width: 100%;
+  height: 100%;
+}
+.containers {
+  width: 100%;
+}
+.hero_top {
+  padding: 24px 40px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.print {
+  display: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.data_container::-webkit-scrollbar {
+  width: 0px;
+}
+@media only screen and (max-width: 490px) {
+  .pr_statement {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .print {
+    display: block;
   }
+  header {
+    padding: 0px 24px !important;
+  }
+  .hero_top {
+    padding: 24px;
+  }
+  .data_container {
+    padding: 0px 24px !important;
+  }
+  .button_card {
+    padding: 0px 24px;
+    width: 100%;
+  }
+  .transactions_data {
+    padding: 0px 24px !important;
+  }
+  .not-mid-drop {
+    right: 0 !important;
+    left: auto !important;
+  }
+}
+.active {
+  font-weight: 600;
+  color: var(--active_text_color);
+}
+.notification_message::-webkit-scrollbar {
+  width: 5px;
 }
