@@ -16,15 +16,15 @@ const TopButton = () => {
           className="d-btn flex items-center  text-[#5e01d6] font-medium text-base px-4 py-3 rounded-lg font-rubik "
           style={{ background: "var(--secondary_button_color)" }}
         >
-          <img src={sendlogo} alt="Send Money" className="h-6 mr-2" />
+          <img src={sendlogo} alt="Send Money" className="h-6 mr-1" />
           Send money
         </button>
         <button
-          className="ceate_button d-btn flex items-center  text-[#fbfaff] font-medium text-base px-4 py-3 rounded-lg font-rubik "
+          className="ceate_button d-btn flex items-center  text-[#fbfaff] font-medium text-base px-2 py-3 rounded-lg font-rubik "
           onClick={toggleDropdown}
           style={{ background: "var(--primary_button_color)" }}
         >
-          <img src={add} alt="Create New" className="h-6 mr-2" />
+          <img src={add} alt="Create New" className="h-6 mr-1" />
           Create new
         </button>
 
